@@ -1,0 +1,46 @@
+name: Bug report / 问题反馈
+description: Report a reproducible problem in Clipture / 反馈可以复现的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Clipture. Please remove private content before attaching screenshots or logs.
+        感谢反馈。上传截图或日志前，请先移除隐私内容。
+  - type: input
+    id: version
+    attributes:
+      label: Clipture version / Clipture 版本
+      placeholder: e.g. 1.1.13
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac model / macOS 版本与 Mac 型号
+      placeholder: e.g. macOS 26.0, MacBook Pro M4
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / 发生了什么？
+      description: Describe the result you saw and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      placeholder: |
+        1. Open…
+        2. Click…
+        3. See…
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or logs / 截图或日志
+      description: Optional. Remove private content before uploading.
