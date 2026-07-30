@@ -1,5 +1,5 @@
 name: Feature request / 功能建议
-description: Suggest an improvement to an existing workflow / 提出功能或体验建议
+description: Suggest a concrete workflow improvement / 提出具体的使用体验改进
 title: "[Idea] "
 labels: ["enhancement"]
 body:
@@ -7,7 +7,7 @@ body:
     id: workflow
     attributes:
       label: Current workflow / 当前使用方式
-      description: What are you trying to accomplish, and where does the current workflow slow you down?
+      description: What are you trying to finish, and where does the current workflow slow you down?
     validations:
       required: true
   - type: textarea
@@ -20,4 +20,4 @@ body:
     id: context
     attributes:
       label: Additional context / 其他信息
-      description: Optional screenshots, examples, or related apps. Remove private content before uploading.
+      description: Optional examples or related apps. Remove private content before uploading.

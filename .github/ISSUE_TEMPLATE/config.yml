@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Privacy or payment question / 隐私或支付问题
+  - name: Documentation / 使用文档
+    url: https://github.com/tageecc/clipture/blob/main/README.zh-CN.md
+    about: Installation, permissions, features, and common questions.
+  - name: General discussion / 一般讨论
+    url: https://github.com/tageecc/clipture/discussions
+    about: Ask a general question that does not contain private information.
+  - name: Private support / 私密支持
     url: https://clipture.talkape.net/zh/support
-    about: Use the private support page for account, payment, or privacy matters.
+    about: Payment, license, privacy, security, or other private matters.
