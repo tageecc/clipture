@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.31 — 2026-08-01
+
+- Added WebP screenshot export under Settings > Capture > Export.
+- WebP export preserves transparency and runs natively on Apple Silicon and Intel Macs.
+- Clipture now recommends PNG when an extra-long screenshot exceeds WebP's dimension limit, avoiding a failed export.
+
+### 中文
+
+- 截图导出新增 WebP 格式，可在“设置 > 截图 > 导出”中选择。
+- WebP 导出会保留透明区域，并在 Apple 芯片与 Intel Mac 上原生运行。
+- 超长截图若超过 WebP 的尺寸范围，Clipture 会提示改用 PNG，避免导出失败。
+
 ## 1.1.30 — 2026-07-31
 
 - Double-click a selected region to finish the capture; Return also confirms a finalized selection.
