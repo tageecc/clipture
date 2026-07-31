@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.32 — 2026-08-01
+
+- Scrolling capture now detects the actual scrollable content below the pointer. Oversized or full-screen selections are narrowed to the page or scroll view so static surroundings no longer disrupt stitching.
+- Scroll targeting now follows the application and Accessibility scroll container below the pointer, reducing early pauses after only a few scroll pulses.
+- The selection outline, size readout, preview, and controls now follow the detected scrolling viewport.
+
+### 中文
+
+- 滚动截图现在会根据鼠标所在位置识别实际可滚动内容。即使选中了全屏，也会自动收敛到网页或滚动视图，避免静止区域干扰拼接。
+- 滚动目标改为按鼠标所在应用和辅助功能滚动容器定位，减少全屏或跨窗口选区只滚动一两次后暂停的问题。
+- 选区边框、尺寸提示、预览和控制条会同步到识别后的滚动区域。
+
 ## 1.1.31 — 2026-08-01
 
 - Added WebP screenshot export under Settings > Capture > Export.
