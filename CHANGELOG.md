@@ -2,6 +2,22 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.30 — 2026-07-31
+
+- Double-click a selected region to finish the capture; Return also confirms a finalized selection.
+- Refined Escape behavior: leave annotation text editing or Live Text selection first, then press Escape again to cancel the capture.
+- Added standalone F1–F20 shortcuts with correct display in menus and Settings.
+- Turning off clipboard history now also disables its menu command, global shortcut, and any open history window.
+- Kept the initial capture overlay non-activating to reduce interference with transient menus and popovers in the source app.
+
+### 中文
+
+- 按两次选区可直接完成截图；选区完成后按 Return 也可确认。
+- 改进 Esc 行为：编辑标注文字或选择识别文字时先退出当前状态，再按一次取消截图。
+- 支持将 F1–F20 功能键单独设为快捷键，并改善功能键在菜单和设置中的显示。
+- 关闭剪贴板历史后，会同步停用对应菜单、快捷键和已打开的历史面板。
+- 保持截图浮层为非激活窗口，减少触发截图时对原应用临时菜单和下拉框的影响。
+
 ## 1.1.29 — 2026-07-30
 
 - Improved editing, saving, previewing, and sharing performance for large and scrolling captures by moving expensive image work off the interface thread.
