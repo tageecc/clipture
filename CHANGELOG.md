@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.33 — 2026-08-01
+
+- Scrolling capture now detects the real scrollable viewport below the pointer before continuous sampling and stitching begin. Full-screen or oversized selections no longer mix fixed headers, footers, or background into the long image.
+- Browser, Electron, and custom-rendered interfaces use a short motion calibration to resolve the viewport. The outline, preview, and controls then follow the detected area automatically.
+- Improved target resolution and recovery so oversized selections no longer pause after one or two scroll movements when global overlap registration fails.
+
+### 中文
+
+- 滚动截图改为先识别鼠标所在位置的真实滚动区域，再开始持续采样和拼接。全屏或跨出内容区域的选区不会再把固定页头、页脚和背景混入长图。
+- 浏览器、Electron 和自绘界面会通过短距离滚动校准实际视口；识别完成后，选区边框、预览和控制条会自动收敛到该区域。
+- 优化滚动目标定位与恢复流程，解决超大选区滚动一两次后因重叠匹配失败而暂停的问题。
+
 ## 1.1.32 — 2026-08-01
 
 - Scrolling capture now detects the actual scrollable content below the pointer. Oversized or full-screen selections are narrowed to the page or scroll view so static surroundings no longer disrupt stitching.
