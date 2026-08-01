@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.35 — 2026-08-01
+
+- Scrolling capture now preserves the original selection and highlights the scrollable area detected under the pointer with a translucent overlay.
+- Scrolling starts only after you confirm the highlighted area by clicking it, using the toolbar checkmark, or pressing Enter.
+- When no scrollable content is detected, Clipture keeps waiting for a valid area instead of changing the selection or starting an unreliable capture.
+
+### 中文
+
+- 进入滚动截图后，Clipture 会保留原选区，并用半透明色块标出鼠标所在位置检测到的可滚动区域。
+- 点击高亮区域、工具栏对号或按 Enter 确认后才会开始滚动，避免全屏或复杂窗口中误选错误的内容区域。
+- 没有检测到可滚动内容时会继续等待选择，不再直接改变选区或启动一次容易失败的滚动采集。
+
 ## 1.1.34 — 2026-08-01
 
 - Hiding the blue selection border now also hides the four visual resize corners for a consistent borderless appearance.
