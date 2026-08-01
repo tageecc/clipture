@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.36 — 2026-08-01
+
+- Simplifies scrolling capture by removing the viewport highlight and confirmation step.
+- Scrolling capture always preserves the user's selection and starts directly when it is contained by one scrollable area.
+- Removes redundant viewport-selection state and window-management code for a leaner capture path.
+
+### 中文
+
+- 简化滚动截图流程，移除滚动区域高亮与二次确认步骤。
+- 滚动截图始终保留用户选区；选区位于单一可滚动区域内时直接开始采集。
+- 精简滚动区域检测、控制条状态与窗口管理代码，降低交互复杂度和运行开销。
+
 ## 1.1.35 — 2026-08-01
 
 - Scrolling capture now preserves the original selection and highlights the scrollable area detected under the pointer with a translucent overlay.
