@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.34 — 2026-08-01
+
+- Hiding the blue selection border now also hides the four visual resize corners for a consistent borderless appearance.
+- Invisible corner hit targets remain active, so the selection can still be resized in borderless mode.
+
+### 中文
+
+- 关闭“显示蓝色选区边框”后，同时隐藏四角缩放标记，保持完整、干净的无边框效果。
+- 四角透明拖拽区域仍然有效，无边框模式下依然可以调整选区大小。
+
 ## 1.1.33 — 2026-08-01
 
 - Scrolling capture now detects the real scrollable viewport below the pointer before continuous sampling and stitching begin. Full-screen or oversized selections no longer mix fixed headers, footers, or background into the long image.
