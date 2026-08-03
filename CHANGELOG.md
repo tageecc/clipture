@@ -1,6 +1,20 @@
 # Changelog
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
+## Windows 0.1.2 — 2026-08-03
+
+- Replaced the primary portable ZIP download with conventional x64 and ARM64 setup EXEs.
+- Added per-user installation, Start menu shortcuts, Windows Installed apps registration, silent install and uninstall, and a standard uninstaller.
+- Added deterministic installer lifecycle tests, version metadata, SHA-256 checksums, and a fail-closed Authenticode signing pipeline for trusted production certificates.
+- Retained portable ZIPs as secondary artifacts for managed deployment and troubleshooting.
+
+### 中文
+
+- Windows 默认下载从便携 ZIP 调整为常规 x64 与 ARM64 EXE 安装程序。
+- 增加当前用户安装、开始菜单入口、Windows“已安装的应用”注册、静默安装与卸载，以及标准卸载程序。
+- 增加安装生命周期测试、版本元数据、SHA-256 校验和，以及面向受信任生产证书的严格 Authenticode 签名流程。
+- 便携 ZIP 继续作为集中部署和排查问题时使用的补充产物。
+
 ## Windows 0.1.1 — 2026-08-03
 
 - Added production x64 and ARM64 downloads for Windows 10 and 11.

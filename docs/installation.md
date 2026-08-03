@@ -33,9 +33,11 @@ Clipture checks the existing macOS permission state before requesting access. Up
 
 ### Install
 
-1. Download the [x64 ZIP](https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip) for most PCs, or the [ARM64 ZIP](https://clipture.talkape.net/downloads/Clipture-Windows-arm64.zip) for Windows on ARM.
-2. Extract the entire ZIP into a folder.
-3. Run `Clipture.exe`. Keep all extracted files together when moving the app.
+1. Download the [x64 setup EXE](https://clipture.talkape.net/downloads/Clipture-Windows-x64-Setup.exe) for most PCs, or the [ARM64 setup EXE](https://clipture.talkape.net/downloads/Clipture-Windows-arm64-Setup.exe) for Windows on ARM.
+2. Run the installer. It installs Clipture for the current user without an administrator prompt.
+3. Start Clipture from the Start menu. Uninstall it later from Windows Settings > Apps > Installed apps.
+
+Portable ZIP builds are attached to GitHub Releases for managed deployment and troubleshooting. They are not the primary download.
 
 ---
 
@@ -51,5 +53,6 @@ Clipture checks the existing macOS permission state before requesting access. Up
 ### Windows
 
 - 要求 Windows 10 1903 或更高版本，也支持 Windows 11。
-- 大多数电脑选择 [x64 版](https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip)，Windows on ARM 设备选择 [ARM64 版](https://clipture.talkape.net/downloads/Clipture-Windows-arm64.zip)。
-- 完整解压 ZIP 后运行 `Clipture.exe`；移动应用时请保留整个文件夹。
+- 大多数电脑选择 [x64 安装程序](https://clipture.talkape.net/downloads/Clipture-Windows-x64-Setup.exe)，Windows on ARM 设备选择 [ARM64 安装程序](https://clipture.talkape.net/downloads/Clipture-Windows-arm64-Setup.exe)。
+- 运行 EXE 后会为当前用户安装，无需管理员权限；可以从开始菜单启动，也可以在 Windows“已安装的应用”中卸载。
+- GitHub Releases 仍附带便携 ZIP，供集中部署和排查问题时使用，不再作为默认下载。

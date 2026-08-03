@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://clipture.talkape.net/downloads/Clipture.dmg"><strong>下载 Mac 版</strong></a>
-  · <a href="https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip"><strong>下载 Windows 版</strong></a>
+  · <a href="https://clipture.talkape.net/downloads/Clipture-Windows-x64-Setup.exe"><strong>下载 Windows 版</strong></a>
   · <a href="https://clipture.talkape.net/zh">官网</a>
   · <a href="https://github.com/tageecc/clipture/releases/latest">版本记录</a>
   · <a href="README.md">English</a>
@@ -39,7 +39,8 @@ Clipture 把常用截图工具和本地剪贴板历史放在一个桌面应用�
 | macOS | macOS 13 或更高版本 |
 | 芯片 | 原生支持 Apple 芯片与 Intel（Universal 2） |
 | Windows | Windows 10 或 11，分别提供 x64 与 ARM64 版本 |
-| 官网安装包 | Developer ID 签名并通过 Apple 公证 |
+| Mac 官网安装包 | Developer ID 签名并通过 Apple 公证 |
+| Windows 安装包 | 当前用户 EXE 安装程序，包含开始菜单入口与标准卸载程序 |
 | Mac 更新 | 官网版可以在应用内检查更新 |
 
 当前所有功能都可以免费使用。自愿的一次性赞助只会关闭偶尔出现的赞助提醒。
@@ -54,8 +55,10 @@ Clipture 把常用截图工具和本地剪贴板历史放在一个桌面应用�
 
 ### Windows
 
-1. 大多数电脑下载 [x64 版](https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip)；Windows on ARM 设备下载 [ARM64 版](https://clipture.talkape.net/downloads/Clipture-Windows-arm64.zip)。
-2. 完整解压 ZIP 后运行 `Clipture.exe`，移动应用时请保留整个文件夹。
+1. 大多数电脑下载 [x64 安装程序](https://clipture.talkape.net/downloads/Clipture-Windows-x64-Setup.exe)；Windows on ARM 设备下载 [ARM64 安装程序](https://clipture.talkape.net/downloads/Clipture-Windows-arm64-Setup.exe)。
+2. 运行 EXE 完成安装。Clipture 会加入开始菜单和 Windows“已安装的应用”，并提供标准卸载程序。
+
+GitHub Releases 仍附带便携 ZIP，供集中管理或排查问题时使用。
 
 更多说明见[安装与权限](docs/installation.md)。
 
