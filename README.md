@@ -4,10 +4,11 @@
 
 <h1 align="center">Clipture</h1>
 
-<p align="center">A screenshot and clipboard utility for macOS.</p>
+<p align="center">A screenshot and clipboard utility for macOS and Windows.</p>
 
 <p align="center">
   <a href="https://clipture.talkape.net/downloads/Clipture.dmg"><strong>Download for macOS</strong></a>
+  · <a href="https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip"><strong>Download for Windows</strong></a>
   · <a href="https://clipture.talkape.net">Website</a>
   · <a href="https://github.com/tageecc/clipture/releases/latest">Release notes</a>
   · <a href="README.zh-CN.md">中文</a>
@@ -19,7 +20,7 @@
   </a>
 </p>
 
-Clipture combines everyday screenshot tools and local clipboard history in one Mac app. It can capture regions or windows, assemble scrolling screenshots, annotate images, recognize text locally, pin captures above other windows, and search previously copied text, images, and files.
+Clipture combines everyday screenshot tools and local clipboard history in one desktop app. It can capture regions or windows, assemble scrolling screenshots, annotate images, recognize text locally, pin captures above other windows, and search previously copied text, images, and files.
 
 ## Features
 
@@ -37,22 +38,30 @@ Clipture combines everyday screenshot tools and local clipboard history in one M
 | --- | --- |
 | macOS | macOS 13 or later |
 | Mac hardware | Native Apple Silicon and Intel support (Universal 2) |
+| Windows | Windows 10 or 11; separate x64 and ARM64 builds |
 | Direct download | Developer ID signed and Apple-notarized DMG |
-| Updates | Built-in update checks for the direct version |
+| Mac updates | Built-in update checks for the direct version |
 
 All current features are free. The optional one-time sponsorship only removes occasional sponsorship reminders.
 
 ## Install
 
-1. Download the latest DMG from the [official website](https://clipture.talkape.net/downloads/Clipture.dmg) or [GitHub Releases](https://github.com/tageecc/clipture/releases/latest).
+### macOS
+
+1. Download the latest DMG from the [official website](https://clipture.talkape.net/downloads/Clipture.dmg) or [GitHub Releases](https://github.com/tageecc/clipture/releases).
 2. Drag Clipture into **Applications**.
 3. Open Clipture and grant Screen Recording when macOS asks. Accessibility is needed only for automatic scrolling and direct paste from clipboard history.
+
+### Windows
+
+1. Download the [x64 build](https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip) for most PCs, or the [ARM64 build](https://clipture.talkape.net/downloads/Clipture-Windows-arm64.zip) for Windows on ARM.
+2. Extract the entire ZIP and run `Clipture.exe`. Keep the extracted files together when moving the app.
 
 See [Installation and permissions](docs/installation.md) for details.
 
 ## Privacy
 
-Screenshots, annotations, OCR, and clipboard history are processed locally. Clipture does not upload captured content. Optional anonymous feature-use counts can be disabled in Settings.
+Screenshots, annotations, OCR, and clipboard history are processed locally on the current device. Clipture does not upload captured content. Optional anonymous feature-use counts can be disabled in Settings.
 
 Read the full [privacy policy](https://clipture.talkape.net/privacy).
 

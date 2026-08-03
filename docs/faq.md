@@ -8,13 +8,17 @@ No. This repository is public for releases, documentation, and feedback. The app
 
 Yes. Direct releases and App Store archives are Universal 2 builds containing native `arm64` and `x86_64` executables. Older Intel hardware can take longer than recent Apple Silicon for OCR or very large image stitching, but it does not pay a Rosetta translation cost.
 
+## Does Clipture support Windows?
+
+Yes. Clipture provides separate x64 and ARM64 builds for Windows 10 and 11. The Windows interface and core capture workflows follow the Mac version.
+
 ## Is Clipture free?
 
 All current capture and clipboard features are free. The optional one-time sponsorship removes occasional sponsorship reminders and does not unlock a separate feature tier.
 
 ## Where is clipboard history stored?
 
-On the current Mac. Clipture does not upload clipboard contents.
+On the current device. Clipture does not upload clipboard contents.
 
 ## 为什么这个仓库看不到源码？
 
@@ -23,3 +27,8 @@ On the current Mac. Clipture does not upload clipboard contents.
 ## 支持 Intel Mac 吗？
 
 支持。官网版和 App Store 归档都是 Universal 2，包含原生 `arm64` 和 `x86_64` 程序。较旧的 Intel 硬件在文字识别或大型长图拼接时可能比新款 Apple 芯片慢，但不会产生 Rosetta 转译开销。
+
+
+## 支持 Windows 吗？
+
+支持。Windows 10 和 11 分别提供 x64 与 ARM64 版本，界面和主要截图操作与 Mac 版保持一致。

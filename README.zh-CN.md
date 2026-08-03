@@ -4,10 +4,11 @@
 
 <h1 align="center">Clipture</h1>
 
-<p align="center">Mac 截图与剪贴板工具。</p>
+<p align="center">Mac 与 Windows 截图、长图和剪贴板工具。</p>
 
 <p align="center">
   <a href="https://clipture.talkape.net/downloads/Clipture.dmg"><strong>下载 Mac 版</strong></a>
+  · <a href="https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip"><strong>下载 Windows 版</strong></a>
   · <a href="https://clipture.talkape.net/zh">官网</a>
   · <a href="https://github.com/tageecc/clipture/releases/latest">版本记录</a>
   · <a href="README.md">English</a>
@@ -19,7 +20,7 @@
   </a>
 </p>
 
-Clipture 把常用截图工具和本地剪贴板历史放在一个 Mac 应用里。它可以截取选区或窗口、生成滚动长图、添加标注、在本地识别文字、把截图置顶，并搜索之前复制的文本、图片和文件。
+Clipture 把常用截图工具和本地剪贴板历史放在一个桌面应用里。它可以截取选区或窗口、生成滚动长图、添加标注、在本地识别文字、把截图置顶，并搜索之前复制的文本、图片和文件。
 
 ## 主要功能
 
@@ -37,22 +38,30 @@ Clipture 把常用截图工具和本地剪贴板历史放在一个 Mac 应用里
 | --- | --- |
 | macOS | macOS 13 或更高版本 |
 | 芯片 | 原生支持 Apple 芯片与 Intel（Universal 2） |
+| Windows | Windows 10 或 11，分别提供 x64 与 ARM64 版本 |
 | 官网安装包 | Developer ID 签名并通过 Apple 公证 |
-| 更新 | 官网版可以在应用内检查更新 |
+| Mac 更新 | 官网版可以在应用内检查更新 |
 
 当前所有功能都可以免费使用。自愿的一次性赞助只会关闭偶尔出现的赞助提醒。
 
 ## 安装
 
-1. 从[官网](https://clipture.talkape.net/downloads/Clipture.dmg)或 [GitHub Releases](https://github.com/tageecc/clipture/releases/latest) 下载 DMG。
+### macOS
+
+1. 从[官网](https://clipture.talkape.net/downloads/Clipture.dmg)或 [GitHub Releases](https://github.com/tageecc/clipture/releases) 下载 DMG。
 2. 把 Clipture 拖入“应用程序”。
 3. 打开 Clipture，并在 macOS 提示时授予屏幕录制权限。只有自动滚动和剪贴板历史直接粘贴需要辅助功能权限。
+
+### Windows
+
+1. 大多数电脑下载 [x64 版](https://clipture.talkape.net/downloads/Clipture-Windows-x64.zip)；Windows on ARM 设备下载 [ARM64 版](https://clipture.talkape.net/downloads/Clipture-Windows-arm64.zip)。
+2. 完整解压 ZIP 后运行 `Clipture.exe`，移动应用时请保留整个文件夹。
 
 更多说明见[安装与权限](docs/installation.md)。
 
 ## 隐私
 
-截图、标注、文字识别和剪贴板历史都在本机处理，不会上传截图内容。设置中的匿名功能使用统计可以随时关闭。
+截图、标注、文字识别和剪贴板历史都在当前设备处理，不会上传截图内容。设置中的匿名功能使用统计可以随时关闭。
 
 完整说明见[隐私政策](https://clipture.talkape.net/zh/privacy)。
 

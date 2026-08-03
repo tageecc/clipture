@@ -1,6 +1,18 @@
 # Changelog
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
+## Windows 0.1.1 — 2026-08-03
+
+- Added production x64 and ARM64 downloads for Windows 10 and 11.
+- Matched the Mac information architecture, visual language, capture toolbar, annotation tools, OCR, pins, clipboard history, settings, and global-shortcut workflows.
+- Added deterministic release archives and SHA-256 checksums.
+
+### 中文
+
+- 发布适用于 Windows 10 和 11 的 x64 与 ARM64 正式下载包。
+- 对齐 Mac 版的信息架构、视觉语言、截图工具条、标注、文字识别、贴图、剪贴板历史、设置与全局快捷键操作。
+- 增加可复现的发布压缩包和 SHA-256 校验文件。
+
 
 ## 1.1.36 — 2026-08-01
 
