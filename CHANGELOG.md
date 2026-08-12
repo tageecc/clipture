@@ -1,6 +1,19 @@
 # Changelog
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
+
+## 1.1.37 — 2026-08-12
+
+- Fixes Esc cancellation immediately after starting capture from a shortcut, before a region is selected.
+- Pinned image windows can now close with Esc whenever they have keyboard focus.
+- Adds regression coverage for capture cancellation and pinned-image Esc closing behavior.
+
+### 中文
+
+- 修复通过快捷键开始截图后、尚未选择区域时 Esc 不能立即取消的问题。
+- 贴图窗口现在获得键盘焦点时可直接按 Esc 关闭。
+- 补充覆盖截图取消和贴图 Esc 关闭行为的回归检查。
+
 ## Windows 0.1.2 — 2026-08-03
 
 - Replaced the primary portable ZIP download with conventional x64 and ARM64 setup EXEs.
