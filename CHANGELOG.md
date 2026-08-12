@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.39 — 2026-08-12
+
+- Quick Look previews opened from Finder can now be selected and captured independently.
+- Menus, dropdowns, and small transient panels remain attached to their owning window, preserving the existing smart-window workflow.
+
+### 中文
+
+- Finder 按空格打开“快速查看”后，预览窗口现在可以单独选中截图。
+- 菜单、下拉框和小型浮层仍会和所属窗口一起显示，不改变原有智能选窗体验。
+
 ## 1.1.37 — 2026-08-12
 
 - Fixes Esc cancellation immediately after starting capture from a shortcut, before a region is selected.
