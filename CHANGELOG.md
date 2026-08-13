@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.41 — 2026-08-13
+
+- Fixed text being repeatedly selected and replaced when searching clipboard history with a Chinese input method.
+- Clipboard entries now show a clear hover highlight.
+- Reduced flicker by updating only changed list rows and reusing the current preview while results refresh.
+
+### 中文
+
+- 修复剪贴板历史搜索框使用中文输入法时，文字被反复选中并覆盖的问题。
+- 剪贴板条目现在会在鼠标悬停时清晰高亮。
+- 优化历史列表与预览区的刷新方式，减少查询和内容更新时的闪烁。
+
 ## 1.1.40 — 2026-08-13
 
 - Reusing text, images, or files from clipboard history no longer creates a duplicate history entry.
