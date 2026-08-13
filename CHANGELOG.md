@@ -2,6 +2,20 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.42 — 2026-08-13
+
+- Hovering a clipboard history item now previews it immediately without changing the current selection or pasting it.
+- Fixed missing previews for PNG and JPEG files copied by WeChat and similar apps.
+- Cached lightweight previews for temporary image files so history thumbnails remain available after the source app removes its temporary file.
+- Improved image decoding and preview size limits to reduce memory and interface pressure from large images.
+
+### 中文
+
+- 鼠标悬停剪贴板历史条目时，右侧会立即预览对应内容，不会改变当前选择或直接粘贴。
+- 修复微信等应用复制的 PNG/JPEG 文件在右侧预览区不显示的问题。
+- 为临时图片文件保存轻量预览，源应用清理临时文件后仍可查看历史缩略图。
+- 优化图片解码与预览尺寸控制，减少大图带来的内存和界面压力。
+
 ## 1.1.41 — 2026-08-13
 
 - Fixed text being repeatedly selected and replaced when searching clipboard history with a Chinese input method.
