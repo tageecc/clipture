@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.40 — 2026-08-13
+
+- Reusing text, images, or files from clipboard history no longer creates a duplicate history entry.
+- Regular copy operations and newly captured screenshots continue to appear in clipboard history normally.
+
+### 中文
+
+- 从剪贴板历史重新选择文本、图片或文件后，不再生成一条重复记录。
+- 普通复制和新生成的截图仍会照常进入剪贴板历史。
+
 ## 1.1.39 — 2026-08-12
 
 - Quick Look previews opened from Finder can now be selected and captured independently.
