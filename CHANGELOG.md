@@ -2,6 +2,20 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.43 — 2026-08-13
+
+- Clipboard History now opens from a clean state every time, resetting search, filters, selection, and scroll position to the newest item.
+- Clipboard History preserves every representation supplied by the source app and restores rich text, HTML, images, and file metadata without reformatting.
+- Replaying an item no longer adds internal marker types or converts the original clipboard payload, while duplicate history entries remain suppressed.
+- Added resilient fallback for legacy entries and damaged format sidecars so existing history remains usable.
+
+### 中文
+
+- 每次打开剪贴板历史时，搜索、筛选、选中项和滚动位置都会回到初始状态，并从最新一条开始。
+- 剪贴板历史会保存原内容的全部格式表示；复制或粘贴历史条目时，富文本、HTML、图片和文件信息会按原样写回。
+- 从历史记录复制内容时不再额外添加内部标记或转换格式，同时继续避免生成重复记录。
+- 增加格式侧车数据的完整性回退，旧记录与异常记录仍可正常复制。
+
 ## 1.1.42 — 2026-08-13
 
 - Hovering a clipboard history item now previews it immediately without changing the current selection or pasting it.
