@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.44 — 2026-08-14
+
+- Fixed Finder Quick Look previews that could still be selected together with the Finder window when the preview surface was smaller than expected.
+- Smart window capture now treats substantial Quick Look previews as standalone windows while keeping small menus and popovers attached to their source window.
+
+### 中文
+
+- 修正 Finder 按空格打开快速查看后，部分较小的预览窗口仍会被并入 Finder 主窗口选择的问题。
+- 智能窗口截图现在会把足够大的快速查看预览作为独立窗口处理；普通小菜单和弹出层仍会随原窗口一起处理。
+
 ## 1.1.43 — 2026-08-13
 
 - Clipboard History now opens from a clean state every time, resetting search, filters, selection, and scroll position to the newest item.
