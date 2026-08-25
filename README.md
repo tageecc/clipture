@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://clipture.talkape.net/downloads/Clipture.dmg"><strong>Download for macOS</strong></a>
-  · <a href="https://clipture.talkape.net/downloads/Clipture-Windows-x64-Setup.exe"><strong>Download for Windows</strong></a>
+  · <a href="https://apps.microsoft.com/detail/9NVGQ229KL1S"><strong>Get it from Microsoft Store</strong></a>
   · <a href="https://clipture.talkape.net">Website</a>
   · <a href="https://github.com/tageecc/clipture/releases/latest">Release notes</a>
   · <a href="README.zh-CN.md">中文</a>
@@ -40,7 +40,8 @@ Clipture combines everyday screenshot tools and local clipboard history in one d
 | Mac hardware | Native Apple Silicon and Intel support (Universal 2) |
 | Windows | Windows 10 or 11; separate x64 and ARM64 builds |
 | Mac direct download | Developer ID signed and Apple-notarized DMG |
-| Windows download | Per-user EXE installer with Start menu and uninstaller |
+| Windows download | Microsoft Store package for x64 and ARM64 |
+| Windows updates | Automatic through Microsoft Store |
 | Mac updates | Built-in update checks for the direct version |
 
 All current features are free. The optional one-time sponsorship only removes occasional sponsorship reminders.
@@ -55,10 +56,8 @@ All current features are free. The optional one-time sponsorship only removes oc
 
 ### Windows
 
-1. Download the [x64 installer](https://clipture.talkape.net/downloads/Clipture-Windows-x64-Setup.exe) for most PCs, or the [ARM64 installer](https://clipture.talkape.net/downloads/Clipture-Windows-arm64-Setup.exe) for Windows on ARM.
-2. Run the setup EXE. Clipture is installed for the current user, added to the Start menu and registered in Windows Installed apps with a standard uninstaller.
-
-Portable ZIP builds are also attached to GitHub Releases for managed or troubleshooting workflows.
+1. Open [Clipture in Microsoft Store](https://apps.microsoft.com/detail/9NVGQ229KL1S).
+2. Select **Install**. Microsoft Store chooses the correct x64 or ARM64 package, verifies it, and keeps it updated automatically.
 
 See [Installation and permissions](docs/installation.md) for details.
 

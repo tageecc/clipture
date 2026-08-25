@@ -12,7 +12,7 @@ Yes. Direct releases and App Store archives are Universal 2 builds containing na
 
 Yes. Clipture provides separate x64 and ARM64 builds for Windows 10 and 11. The Windows interface and core capture workflows follow the Mac version.
 
-The normal Windows download is a setup EXE. Portable ZIP builds are retained only as secondary artifacts for managed or troubleshooting workflows.
+The normal Windows download is the verified Microsoft Store package. Microsoft Store selects x64 or ARM64 automatically and handles updates.
 
 ## Is Clipture free?
 
@@ -35,4 +35,4 @@ On the current device. Clipture does not upload clipboard contents.
 
 支持。Windows 10 和 11 分别提供 x64 与 ARM64 版本，界面和主要截图操作与 Mac 版保持一致。
 
-Windows 默认提供 EXE 安装程序。便携 ZIP 仅作为集中管理或排查问题时使用的补充产物。
+Windows 默认通过 Microsoft Store 安装。商店会自动选择 x64 或 ARM64 版本，并处理后续更新。
