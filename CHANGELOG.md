@@ -2,6 +2,20 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.45 — 2026-08-27
+
+- Clipboard History now opens as a centered floating panel by default and can be switched to a menu bar popover in Settings. In popover mode, left-clicking the menu bar icon opens history while right-clicking keeps the full menu.
+- Fixed the preview remaining pinned to the hovered item after keyboard navigation moved the selection.
+- Added on-device recognition and quick actions for URLs, JSON, colors, Markdown, and code, including opening links, copying QR codes, formatting JSON, and copying color values.
+- Added `Option + Return` continuous paste so several items can be pasted while keeping the panel open.
+
+### 中文
+
+- 剪贴板历史默认以居中悬浮面板打开，也可在设置中切换为菜单栏下拉模式；下拉模式支持左键菜单栏图标快速打开，右键仍显示完整菜单。
+- 修复鼠标悬停条目后使用键盘上下键时，预览仍停留在鼠标条目的问题。
+- 新增 URL、JSON、颜色、Markdown 与代码的本地识别和快捷操作，包括打开链接、复制二维码、格式化 JSON 与复制颜色值。
+- 新增 `Option + Return` 连续粘贴，可在面板保持打开时依次粘贴多条内容。
+
 ## 1.1.44 — 2026-08-14
 
 - Fixed Finder Quick Look previews that could still be selected together with the Finder window when the preview surface was smaller than expected.
