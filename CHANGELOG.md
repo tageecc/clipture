@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.46 — 2026-08-27
+
+- Menu bar mode now uses a native popover anchored to the menu bar icon instead of a repositioned regular window.
+- The popover now places Clipboard History on the left and a compact preview on the right for faster browsing and selection.
+- The centered Spotlight-style panel remains the default, and both presentation modes can still be selected in Settings.
+
+### 中文
+
+- 菜单栏下拉模式现在使用真正锚定菜单栏图标的原生浮层，不再只是移动普通窗口。
+- 下拉浮层调整为左侧剪贴板历史列表、右侧紧凑预览，更适合快速浏览和连续选择。
+- 默认的 Spotlight 风格居中面板保持不变，可继续在设置中切换两种显示方式。
+
 ## 1.1.45 — 2026-08-27
 
 - Clipboard History now opens as a centered floating panel by default and can be switched to a menu bar popover in Settings. In popover mode, left-clicking the menu bar icon opens history while right-clicking keeps the full menu.
