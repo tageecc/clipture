@@ -66,6 +66,18 @@ Release binaries and complete notes are available on the [Releases page](https:/
 - 新增 URL、JSON、颜色、Markdown 与代码的本地识别和快捷操作，包括打开链接、复制二维码、格式化 JSON 与复制颜色值。
 - 新增 `Option + Return` 连续粘贴，可在面板保持打开时依次粘贴多条内容。
 
+## Windows 0.1.3 — 2026-08-26
+
+- Published Clipture through Microsoft Store for both x64 and ARM64, with Store-managed signing, installation, and updates.
+- Added centered and notification-area Clipboard History modes, consistent pointer and keyboard previews, and continuous paste.
+- Added on-device recognition and quick actions for URLs, JSON, colors, Markdown, and code.
+
+### 中文
+
+- 通过 Microsoft Store 正式发布 x64 与 ARM64 版本，由商店完成签名验证、安装和自动更新。
+- 剪贴板历史新增居中与托盘下拉两种面板模式，统一鼠标与键盘预览，并支持连续粘贴。
+- 新增 URL、JSON、颜色、Markdown 与代码的本地识别和快捷操作。
+
 ## 1.1.44 — 2026-08-14
 
 - Fixed Finder Quick Look previews that could still be selected together with the Finder window when the preview surface was smaller than expected.
