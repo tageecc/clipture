@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.51 — 2026-08-28
+
+- The menu bar icon now always opens the complete menu, so Smart Capture, Clipboard History, tools, and settings remain available in every history presentation mode.
+- Clipboard History stays as the second menu item; choosing the menu-bar popover mode now changes only where the history window appears.
+- Added runtime coverage for the real `NSStatusItem` behavior to prevent future interaction regressions.
+
+### 中文
+
+- 顶部菜单栏图标现在始终打开完整菜单，智能截图、剪贴板历史、工具和设置不会因历史展示方式而消失。
+- 剪贴板历史固定为菜单第二项；选择“菜单栏下拉”后，仅历史窗口改为贴近菜单栏显示。
+- 增加真实 `NSStatusItem` 行为测试，防止菜单栏交互在后续更新中回退。
+
 ## 1.1.50 — 2026-08-28
 
 - Upgraded the capture-only skill to the complete `$clipture` app skill for capture, annotation, clipboard, and interactive app workflows.
