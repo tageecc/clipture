@@ -61,6 +61,12 @@ All current features are free. The optional one-time sponsorship only removes oc
 
 See [Installation and permissions](docs/installation.md) for details.
 
+<!-- clipture-agent-capture:start -->
+## AI agent capture on macOS
+
+The signed macOS app includes a structured screenshot CLI and a Codex skill for display, window, and interactive-region capture with combined annotations. See [Agent capture](docs/agent-capture.md) for installation and JSON examples.
+<!-- clipture-agent-capture:end -->
+
 ## Privacy
 
 Screenshots, annotations, OCR, and clipboard history are processed locally on the current device. Clipture does not upload captured content. Optional anonymous feature-use counts can be disabled in Settings.

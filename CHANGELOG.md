@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.47 — 2026-08-28
+
+- Added a structured screenshot interface for Codex and other local AI agents, covering full displays, specific windows, and interactive regions.
+- One request can combine rectangles, highlights, arrows, numbered markers, and text using pixel or normalized coordinates.
+- The direct-download app now bundles an installable `clipture-capture` Codex skill, with explicit JSON results and errors.
+
+### 中文
+
+- 新增面向 Codex 和其他本地 AI Agent 的结构化截图接口，支持全屏、指定窗口和交互选区。
+- 一次请求可组合矩形、高亮、箭头、编号和文字标注，并支持像素或归一化坐标。
+- 官网版内置可安装的 `clipture-capture` Codex skill；结果和错误均返回明确 JSON。
+
 ## 1.1.46 — 2026-08-27
 
 - Menu bar mode now uses a native popover anchored to the menu bar icon instead of a repositioned regular window.
