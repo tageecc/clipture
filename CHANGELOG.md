@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.49 — 2026-08-28
+
+- Expanded the `clipture-capture` Codex skill with an approval-gated official installer that verifies SHA-256, Developer ID, Gatekeeper, and notarization.
+- Added `agent doctor`, `agent displays`, and standalone `agent annotate`, so agents can inspect a raw capture before applying precise rectangles, highlights, arrows, numbered markers, and text through Clipture's existing renderer.
+- Improved the installer's compatibility with the macOS system JSON tools; schemas, paths, dimensions, results, and errors remain stable JSON without silent fallback.
+
+### 中文
+
+- 完善 `clipture-capture` Codex skill：可在用户确认后自动下载官网版本，并严格校验 SHA-256、Developer ID、Gatekeeper 与公证状态。
+- 新增 `agent doctor`、`agent displays` 与独立 `agent annotate`，支持 Agent 先读取原始截图，再用同一套 Clipture 标注实现精确添加矩形、高亮、箭头、编号和文字。
+- 改进自动安装器对 macOS 系统 JSON 工具的兼容性；截图与标注 schema、路径、尺寸、结果及错误继续使用稳定 JSON 接口，不进行静默兜底。
+
 ## 1.1.47 — 2026-08-28
 
 - Added a structured screenshot interface for Codex and other local AI agents, covering full displays, specific windows, and interactive regions.

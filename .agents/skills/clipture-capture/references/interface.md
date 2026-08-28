@@ -1,18 +1,24 @@
-# Clipture agent capture interface
+# Clipture agent interface
 
-## Commands
+The runtime schemas are authoritative:
+
+```bash
+/Applications/Clipture.app/Contents/MacOS/Clipture agent schema capture
+/Applications/Clipture.app/Contents/MacOS/Clipture agent schema annotate
+```
+
+## Discovery and health
 
 ```bash
 /Applications/Clipture.app/Contents/MacOS/Clipture agent version
-/Applications/Clipture.app/Contents/MacOS/Clipture agent schema
+/Applications/Clipture.app/Contents/MacOS/Clipture agent doctor
+/Applications/Clipture.app/Contents/MacOS/Clipture agent displays
 /Applications/Clipture.app/Contents/MacOS/Clipture agent windows
-/Applications/Clipture.app/Contents/MacOS/Clipture agent capture --request /absolute/request.json
-/Applications/Clipture.app/Contents/MacOS/Clipture agent capture --request -
 ```
 
-`agent schema` prints the machine-readable JSON Schema. `agent windows` prints current capturable window IDs, owner names, titles, process IDs, and AppKit bounds.
+`displays` returns display IDs, main-display status, AppKit frames, pixel dimensions, and scale factors. `windows` returns current window IDs, owner names, process IDs, titles, and AppKit bounds; it requires Screen Recording permission.
 
-## Request
+## Capture request
 
 ```json
 {
@@ -28,12 +34,18 @@
 }
 ```
 
-- `displayID` is optional for `display`; omission selects the main display.
-- `windowID` is required for `window` and must come from a fresh `agent windows` result.
-- `includeShadow` defaults to `true` for window capture.
-- `displayID` and `windowID` are forbidden for `interactive`.
+- Omit `displayID` to capture the main display.
+- A window request requires a fresh `windowID`; `includeShadow` defaults to `true`.
+- An interactive request forbids `displayID` and `windowID`.
 - `coordinateSpace` defaults to `pixels`.
-- Coordinates always have a top-left origin.
+
+## Annotate an existing capture
+
+Use this after inspecting a raw capture and choosing exact coordinates. It requires at least one annotation and never overwrites the input.
+
+```bash
+printf '%s' '{"input":"/tmp/raw.png","output":"/tmp/annotated.png","coordinateSpace":"normalized","annotations":[{"type":"highlight","rect":{"x":0.10,"y":0.15,"width":0.40,"height":0.12},"opacity":0.35},{"type":"step","point":{"x":0.52,"y":0.21},"number":1}]}' | /Applications/Clipture.app/Contents/MacOS/Clipture agent annotate --request -
+```
 
 ## Annotations
 
@@ -69,35 +81,20 @@ Text:
 {"type":"text","text":"Open settings","rect":{"x":450,"y":190,"width":260,"height":70},"color":"#F53342","fontSize":28}
 ```
 
-Colors accept `#RRGGBB` or `#RRGGBBAA`. Rectangle widths, point coordinates, and text rectangles must remain fully inside the captured image. Normalized coordinates must remain within `0...1`; a normalized rectangle's `x + width` and `y + height` must not exceed `1`.
+Colors accept `#RRGGBB` or `#RRGGBBAA`. All coordinates must be finite and fully inside the image. A normalized rectangle's `x + width` and `y + height` must not exceed `1`.
 
-## Combined example
+## Results and errors
 
-```json
-{
-  "source": {"type":"display"},
-  "output": "/tmp/clipture-combined.png",
-  "coordinateSpace": "normalized",
-  "annotations": [
-    {"type":"rectangle","rect":{"x":0.05,"y":0.08,"width":0.34,"height":0.24}},
-    {"type":"highlight","rect":{"x":0.12,"y":0.42,"width":0.50,"height":0.10},"opacity":0.30},
-    {"type":"arrow","start":{"x":0.80,"y":0.75},"end":{"x":0.42,"y":0.32}},
-    {"type":"step","point":{"x":0.40,"y":0.30},"number":1},
-    {"type":"text","text":"Target","rect":{"x":0.44,"y":0.25,"width":0.18,"height":0.08}}
-  ]
-}
-```
-
-Success is one JSON object on stdout:
+Capture and annotate return one JSON object on stdout:
 
 ```json
-{"annotationsApplied":5,"height":1800,"ok":true,"operation":"capture","path":"/tmp/clipture-combined.png","width":2880}
+{"annotationsApplied":5,"height":1800,"ok":true,"operation":"annotate","path":"/tmp/annotated.png","width":2880}
 ```
 
-Errors are one JSON object on stderr and a nonzero exit code:
+Errors return one JSON object on stderr and a nonzero exit code:
 
 ```json
 {"error":{"code":"invalid_request","message":"'output' must be an absolute path."},"ok":false}
 ```
 
-Stable error codes include `usage_error`, `invalid_request`, `screen_recording_permission_denied`, `capture_failed`, `output_failed`, `capture_cancelled`, and `skill_install_failed`.
+Stable codes are `usage_error`, `invalid_request`, `screen_recording_permission_denied`, `capture_failed`, `output_failed`, `capture_cancelled`, and `skill_install_failed`. There is no silent fallback.

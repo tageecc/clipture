@@ -64,7 +64,7 @@ Clipture 把常用截图工具和本地剪贴板历史放在一个桌面应用�
 <!-- clipture-agent-capture:start -->
 ## macOS AI Agent 截图
 
-签名版 macOS 应用内置结构化截图 CLI 和 Codex skill，支持全屏、指定窗口、交互选区及组合标注。安装方式和 JSON 示例见 [AI Agent 截图接口](docs/agent-capture.md)。
+签名版 macOS 应用内置结构化 CLI 和 Codex skill，支持全屏、指定窗口、交互选区、查看后标注、环境预检与可信安装。安装方式和 JSON 示例见 [AI Agent 截图接口](docs/agent-capture.md)。
 <!-- clipture-agent-capture:end -->
 
 ## 隐私

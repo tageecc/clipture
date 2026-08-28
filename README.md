@@ -64,7 +64,7 @@ See [Installation and permissions](docs/installation.md) for details.
 <!-- clipture-agent-capture:start -->
 ## AI agent capture on macOS
 
-The signed macOS app includes a structured screenshot CLI and a Codex skill for display, window, and interactive-region capture with combined annotations. See [Agent capture](docs/agent-capture.md) for installation and JSON examples.
+The signed macOS app includes a structured CLI and Codex skill for display, window, and interactive-region capture, content-aware follow-up annotation, health checks, and verified installation. See [Agent capture](docs/agent-capture.md) for installation and JSON examples.
 <!-- clipture-agent-capture:end -->
 
 ## Privacy
