@@ -1,5 +1,0 @@
-interface:
-  display_name: "Clipture Capture"
-  short_description: "Install, capture, and annotate macOS screenshots"
-  brand_color: "#F53342"
-  default_prompt: "Use $clipture-capture to capture a macOS screenshot and annotate it if needed."
