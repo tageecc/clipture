@@ -2,6 +2,20 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.50 — 2026-08-28
+
+- Upgraded the capture-only skill to the complete `$clipture` app skill for capture, annotation, clipboard, and interactive app workflows.
+- Added structured current-clipboard reads, writes, and explicitly confirmed clearing for text, images, and file lists.
+- Added searchable, paginated local clipboard-history commands for retrieval, restore, statistics, single-item deletion, and explicitly confirmed clearing.
+- `agent doctor` now reports separate readiness for capture, annotation, clipboard, clipboard history, and automatic scrolling.
+
+### 中文
+
+- 将截图专用 Skill 升级为完整的 `$clipture` 应用级 Skill，覆盖截图、标注、剪贴板和交互式应用能力。
+- 新增结构化当前剪贴板接口，支持文字、图片和文件列表的读取、写入与明确确认后的清空。
+- 新增可搜索、可分页的本地剪贴板历史接口，支持读取、恢复、统计、单项删除和明确确认后的全部清空。
+- `agent doctor` 现在分别报告截图、标注、剪贴板、剪贴板历史和自动滚动能力状态。
+
 ## 1.1.49 — 2026-08-28
 
 - Expanded the `clipture-capture` Codex skill with an approval-gated official installer that verifies SHA-256, Developer ID, Gatekeeper, and notarization.

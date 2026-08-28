@@ -62,9 +62,9 @@ All current features are free. The optional one-time sponsorship only removes oc
 See [Installation and permissions](docs/installation.md) for details.
 
 <!-- clipture-agent-capture:start -->
-## AI agent capture on macOS
+## Clipture for AI agents on macOS
 
-The signed macOS app includes a structured CLI and Codex skill for display, window, and interactive-region capture, content-aware follow-up annotation, health checks, and verified installation. See [Agent capture](docs/agent-capture.md) for installation and JSON examples.
+The signed macOS app includes a structured CLI and Codex skill for capture, annotation, current clipboard reads and writes, searchable local clipboard history, health checks, and verified installation. Interactive workflows such as scrolling capture, pinning, Live Text, and color picking remain available through the app UI. See [Agent interface](docs/agent.md) for installation and JSON examples.
 <!-- clipture-agent-capture:end -->
 
 ## Privacy
