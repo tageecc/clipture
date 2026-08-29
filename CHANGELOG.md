@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.52 — 2026-08-30
+
+- The checkmark in the editor preview now closes the window after successfully copying the screenshot, matching the completion behavior of regular captures.
+- If copying fails, the editor stays open and shows an explicit error so unexported work is not lost.
+
+### 中文
+
+- 编辑预览中的对勾现在会在成功复制截图后关闭窗口，与普通截图的完成交互保持一致。
+- 如果复制失败，编辑预览会保留并显示明确错误，避免丢失尚未导出的内容。
+
 ## 1.1.51 — 2026-08-28
 
 - The menu bar icon now always opens the complete menu, so Smart Capture, Clipboard History, tools, and settings remain available in every history presentation mode.
