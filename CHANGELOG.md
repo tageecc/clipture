@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.1.53 — 2026-08-30
+
+- Added a unified capture permission setup window that explains Screen Recording and Accessibility access, shows live status, and provides explicit authorization controls before capture begins.
+- macOS permission prompts now appear only after you choose Allow. Regular capture checks Screen Recording first, while scrolling capture checks Accessibility before its controls start, avoiding mid-workflow interruptions.
+- Permission controls in Settings now use the same guided flow and refresh their status live.
+
+### 中文
+
+- 新增统一的截图权限准备窗口，在开始操作前集中展示屏幕录制与辅助功能权限的用途、状态和授权入口。
+- 系统授权提示现在只会在主动点击“授权”后出现；普通截图会先确认屏幕录制权限，滚动截图会先确认辅助功能权限，不再进入流程后才被弹窗打断。
+- 设置中的权限入口已接入同一授权流程，并会实时刷新授权状态。
+
 ## 1.1.52 — 2026-08-30
 
 - The checkmark in the editor preview now closes the window after successfully copying the screenshot, matching the completion behavior of regular captures.
