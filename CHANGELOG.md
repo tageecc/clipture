@@ -2,6 +2,22 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.2 — 2026-08-31
+
+- Added comprehensive recording settings: MP4 resolution from Original, 4K, 2K, 1080p, or 720p; 24/30/60 fps; automatic or custom bitrate; configurable GIF size and frame rate; and pointer visibility.
+- Redesigned the recording controls as a compact floating HUD with a single pause/resume button and a dedicated stop button. Pausing now freezes both the timer and the exported timeline.
+- Refined the recording-region frame with a lighter, clearer treatment and an orange paused state. The frame and controls remain excluded from MP4 and GIF output.
+- After stopping, the HUD now moves smoothly to the bottom-left and remains visible throughout processing. GIF export shows real encoding progress, while MP4 provides continuous feedback until finalization completes.
+- Saved MP4 and GIF files are copied automatically to the system clipboard and enter Clipture Clipboard History when file-list history is enabled, eliminating the extra Finder copy step.
+
+### 中文
+
+- 新增完整的录制设置：MP4 可配置原始、4K、2K、1080p 或 720p 分辨率，24/30/60 帧率与自动或自定义码率；GIF 可配置最大尺寸和帧率，并可选择是否显示鼠标指针。
+- 录制控制条重新设计为紧凑悬浮控件，支持同一按钮暂停/继续以及独立停止；暂停时计时和最终文件时间轴都会同步冻结。
+- 录制区域边框更轻、更清晰，暂停时会切换为橙色；控制条和边框仍不会进入最终 MP4 或 GIF。
+- 停止录制后，控制条会平滑移动到屏幕左下角并持续显示处理进度；GIF 显示真实编码百分比，MP4 在文件封装完成前保持明确反馈。
+- 保存后的 MP4 或 GIF 会自动复制到系统剪贴板，并在启用文件列表历史时直接进入 Clipture 剪贴板历史，无需再次前往 Finder 复制。
+
 ## 1.2.1 — 2026-08-31
 
 - Screenshots and recordings now share the same selection entry and shortcut. After selecting a region, choose MP4 or GIF directly from the compact Record menu to start recording.
