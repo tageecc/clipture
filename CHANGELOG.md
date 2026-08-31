@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.1 — 2026-08-31
+
+- Screenshots and recordings now share the same selection entry and shortcut. After selecting a region, choose MP4 or GIF directly from the compact Record menu to start recording.
+- A visible red region border remains on screen throughout recording, so the captured area is always clear. The border and timer controls are excluded from the final video or GIF.
+- Cross-display selections now align with the primary recording display, keeping the visible border consistent with the actual output area.
+
+### 中文
+
+- 截图与录屏现在共用同一个选区入口和快捷键；选区后点击“录制”，可直接从紧凑下拉菜单选择 MP4 或 GIF 并开始录制。
+- 录制期间持续显示醒目的红色区域边框，让录制范围始终清晰可见；边框与计时控制条不会进入最终视频或 GIF。
+- 跨显示器选区会自动匹配主要录制屏幕，确保可见边框与实际输出范围一致。
+
 ## 1.2.0 — 2026-08-31
 
 - Added region screen recording with native MP4 and animated GIF export. A compact timer HUD stays available while Clipture's own windows are excluded from the recording.
