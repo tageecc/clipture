@@ -20,7 +20,7 @@
   </a>
 </p>
 
-Clipture combines everyday screenshot tools and local clipboard history in one desktop app. It can capture regions or windows, assemble scrolling screenshots, annotate images, recognize text locally, pin captures above other windows, and search previously copied text, images, and files.
+Clipture combines everyday screen capture tools and local clipboard history in one desktop app. It can capture regions or windows, assemble scrolling screenshots, annotate images, recognize text locally, pin captures above other windows, and search previously copied text, images, and files. On macOS, it also records a selected region to MP4 or GIF and preserves editable capture history.
 
 ## Features
 
@@ -29,6 +29,8 @@ Clipture combines everyday screenshot tools and local clipboard history in one d
 - Rectangles, ellipses, lines, arrows, mosaic, text, and numbered callouts
 - Local text recognition and text selection inside a capture
 - Color picking and pinned image windows
+- Region recording to MP4 or animated GIF on macOS
+- Editable capture history with original pixels and annotation layers on macOS
 - Searchable local clipboard history for text, images, and file lists
 - Configurable global shortcuts and bilingual interface
 
