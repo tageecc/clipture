@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.0 — 2026-08-31
+
+- Added region screen recording with native MP4 and animated GIF export. A compact timer HUD stays available while Clipture's own windows are excluded from the recording.
+- Added editable Capture History. Clipture keeps the original image and annotation layers for the latest 100 edited captures, so each one can be reopened, copied as a composed image, or deleted.
+- Screenshot, scrolling capture, and recording continue to use the guided permission setup flow, preventing macOS prompts from interrupting selection or an active recording.
+
+### 中文
+
+- 新增区域屏幕录制，可直接导出 MP4 视频或动画 GIF；录制期间提供紧凑计时控制条，Clipture 自身窗口不会进入画面。
+- 新增可编辑截图历史：自动保留最近 100 张编辑截图的原图与标注图层，可随时再次编辑、复制合成结果或删除。
+- 截图、滚动截图和录屏继续使用统一的权限准备流程，系统授权不会在选区或录制开始后突然打断操作。
+
 ## 1.1.53 — 2026-08-30
 
 - Added a unified capture permission setup window that explains Screen Recording and Accessibility access, shows live status, and provides explicit authorization controls before capture begins.
