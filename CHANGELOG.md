@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.4 — 2026-08-31
+
+- Fixed the recording HUD moving only partway and appearing stuck behind the capture region after stopping an MP4 recording.
+- File finalization now runs alongside the interface transition. The save panel waits until the HUD reaches the lower-left corner and the recording frame has fully faded, giving MP4 and GIF recordings the same smooth finish.
+
+### 中文
+
+- 修复 MP4 录制停止后，控制条移动一小段便卡在录制区域后的问题。
+- 录制文件封装与界面收尾现在并行执行；保存面板会在控制条完整移动至左下角、录制边框完整淡出后再出现，MP4 与 GIF 的结束体验保持一致。
+
 ## 1.2.3 — 2026-08-31
 
 - Refined the recording HUD into a tighter single-row layout with the format and timer side by side, narrower sizing, and more balanced control spacing.
