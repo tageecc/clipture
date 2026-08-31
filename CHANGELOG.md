@@ -2,6 +2,20 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.3 — 2026-08-31
+
+- Refined the recording HUD into a tighter single-row layout with the format and timer side by side, narrower sizing, and more balanced control spacing.
+- Clipboard History can now preview animated GIF recordings directly. Only the active preview animates, avoiding unnecessary decoding while browsing the list.
+- MP4 recordings now open in a native macOS player inside Clipboard History, with playback initiated by the user and standard system controls.
+- If the original GIF is moved or deleted, Clipboard History falls back to its cached static poster.
+
+### 中文
+
+- 录制控制条改为更紧凑的单行布局，格式与计时器并排显示，并收敛整体宽度、按钮尺寸和间距。
+- 剪贴板历史现在可直接动态预览 GIF；只对当前预览项播放，避免列表滚动时产生额外解码开销。
+- MP4 录制文件可在剪贴板历史中使用 macOS 原生播放器预览，默认不自动播放，并提供系统播放控制。
+- GIF 原文件被移动或删除后，历史仍会回退显示已缓存的静态封面。
+
 ## 1.2.2 — 2026-08-31
 
 - Added comprehensive recording settings: MP4 resolution from Original, 4K, 2K, 1080p, or 720p; 24/30/60 fps; automatic or custom bitrate; configurable GIF size and frame rate; and pointer visibility.
