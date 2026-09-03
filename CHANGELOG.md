@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.5 — 2026-09-03
+
+- Animated GIF recordings no longer open the save panel automatically after encoding. You can now copy the animation directly, save it to a file, or discard it without leaving a file in your user folders.
+- Improved automatic scrolling capture compatibility on macOS 26.5. Clipture now derives the scrolling viewport and end of content from captured frames instead of relying on another app's Accessibility hierarchy, making browsers, Electron apps, and custom scrolling views more reliable.
+
+### 中文
+
+- 动画 GIF 编码完成后不再自动弹出保存窗口；现在可以直接复制动图、另存文件或放弃结果，复制不会在用户目录留下文件。
+- 优化 macOS 26.5 的自动滚动长截图兼容性。滚动区域与底部位置改由截图画面判断，不再依赖目标应用的辅助功能界面结构，对浏览器、Electron 应用和自绘滚动区域更稳定。
+
 ## 1.2.4 — 2026-08-31
 
 - Fixed the recording HUD moving only partway and appearing stuck behind the capture region after stopping an MP4 recording.
