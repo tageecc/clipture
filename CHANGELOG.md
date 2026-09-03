@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.6 — 2026-09-03
+
+- Refined the post-recording HUD with clearer status and action groups, improved button icons and spacing, and a stable layout after copy or save succeeds.
+- Added the structured `agent record` interface so AI agents can directly record a display or pixel region to MP4/GIF with an explicit duration, cursor, resolution, frame-rate, and bitrate controls, strict JSON Schema, stable error codes, and safe no-overwrite output behavior.
+
+### 中文
+
+- 优化录屏完成后的悬浮操作栏，重新整理状态与操作区域、按钮图标和间距；复制或保存成功后不再突然缩小或挤成一团。
+- 新增结构化 `agent record` 接口，AI Agent 可直接录制指定显示器或像素区域并输出 MP4/GIF，支持明确时长、光标、分辨率、帧率与码率设置，以及严格 JSON Schema、稳定错误码和不覆盖已有文件的安全行为。
+
 ## 1.2.5 — 2026-09-03
 
 - Animated GIF recordings no longer open the save panel automatically after encoding. You can now copy the animation directly, save it to a file, or discard it without leaving a file in your user folders.

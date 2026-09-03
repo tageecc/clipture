@@ -1,6 +1,5 @@
 interface:
   display_name: "Clipture"
-  short_description: "Capture, annotate, and use the local clipboard"
+  short_description: "Capture, record, annotate, and use the local clipboard"
   brand_color: "#F53342"
-  default_prompt: "Use $clipture for this macOS capture, annotation, or clipboard task."
-
+  default_prompt: "Use $clipture for this macOS capture, recording, annotation, or clipboard task."

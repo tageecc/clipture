@@ -4,6 +4,7 @@ The runtime schemas are authoritative:
 
 ```bash
 /Applications/Clipture.app/Contents/MacOS/Clipture agent schema capture
+/Applications/Clipture.app/Contents/MacOS/Clipture agent schema record
 /Applications/Clipture.app/Contents/MacOS/Clipture agent schema annotate
 ```
 
@@ -38,6 +39,39 @@ The runtime schemas are authoritative:
 - A window request requires a fresh `windowID`; `includeShadow` defaults to `true`.
 - An interactive request forbids `displayID` and `windowID`.
 - `coordinateSpace` defaults to `pixels`.
+
+## Timed screen recording
+
+`record` captures a display or an explicit region for a required duration, then
+returns exactly one JSON result after encoding finishes. This makes it safe to
+start the command in an asynchronous shell session, perform the UI actions to
+demonstrate, and wait for the command to complete.
+
+MP4 display recording:
+
+```bash
+printf '%s' '{"source":{"type":"display"},"format":"mp4","durationSeconds":5,"output":"/tmp/demo.mp4","showsCursor":true,"resolution":"fullHD","frameRate":30}' | /Applications/Clipture.app/Contents/MacOS/Clipture agent record --request -
+```
+
+GIF region recording:
+
+```bash
+printf '%s' '{"source":{"type":"region","displayID":1,"rect":{"x":100,"y":120,"width":1280,"height":720}},"format":"gif","durationSeconds":4,"output":"/tmp/demo.gif","gifMaximumSize":960,"gifFrameRate":10}' | /Applications/Clipture.app/Contents/MacOS/Clipture agent record --request -
+```
+
+- Omit `displayID` to use the main display.
+- Region coordinates are pixels relative to the selected display's top-left corner.
+- `durationSeconds` must be between 0.25 and 3600.
+- The output path must be absolute, use the matching `.mp4` or `.gif` extension,
+  have an existing parent directory, and must not already exist.
+- MP4 accepts `resolution`, `frameRate`, and `bitRateMbps`. GIF accepts
+  `gifMaximumSize` and `gifFrameRate`. Do not mix the two groups.
+- `showsCursor` defaults to `true`.
+- Window isolation is not exposed as a region approximation.
+
+Success includes the exact output path, dimensions, requested duration, format,
+and byte count. Stable recording errors are `screen_recording_permission_denied`,
+`recording_failed`, `output_failed`, and `invalid_request`.
 
 ## Annotate an existing capture
 

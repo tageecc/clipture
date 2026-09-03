@@ -1,10 +1,10 @@
 # Clipture Agent Interface / AI Agent 接口
 
-Clipture exposes its macOS capture, annotation, current clipboard, and local
+Clipture exposes its macOS capture, timed recording, annotation, current clipboard, and local
 clipboard-history capabilities through the signed app executable. The CLI uses
 the same implementation as the app UI and returns strict JSON results or errors.
 
-Clipture 通过签名应用可执行文件向 AI Agent 提供截图、标注、当前剪贴板和本地
+Clipture 通过签名应用可执行文件向 AI Agent 提供截图、定时录屏、标注、当前剪贴板和本地
 剪贴板历史能力。CLI 与图形界面复用同一套实现，并严格返回 JSON 结果或错误。
 
 ## Install and discover the skill / 安装与发现 Skill
@@ -42,6 +42,7 @@ SHA-256、Bundle ID、Developer ID 团队、Gatekeeper 与 Apple 公证。
 /Applications/Clipture.app/Contents/MacOS/Clipture agent doctor
 /Applications/Clipture.app/Contents/MacOS/Clipture agent version
 /Applications/Clipture.app/Contents/MacOS/Clipture agent schema capture
+/Applications/Clipture.app/Contents/MacOS/Clipture agent schema record
 /Applications/Clipture.app/Contents/MacOS/Clipture agent schema clipboard-write
 ```
 
@@ -70,6 +71,27 @@ different output path with `agent annotate`. Inspect the runtime `capture` and
 
 如需根据画面内容放置标注，先截图并读取图片，再用 `agent annotate` 输出到不同
 路径。完整字段以运行时 `capture` 与 `annotate` schema 为准。
+
+## Timed recording / 定时录屏
+
+Record a display or an explicit pixel region for a required duration. The
+command stays alive until capture and encoding finish, so an Agent can start it
+asynchronously, perform UI actions, then wait for one final JSON result:
+
+录制指定显示器或像素区域，并要求明确时长。命令会持续运行到录制和编码结束，
+Agent 可异步启动它、执行界面操作，再等待唯一的最终 JSON 结果：
+
+```bash
+printf '%s' '{"source":{"type":"display"},"format":"mp4","durationSeconds":5,"output":"/tmp/demo.mp4","resolution":"fullHD","frameRate":30}' | /Applications/Clipture.app/Contents/MacOS/Clipture agent record --request -
+printf '%s' '{"source":{"type":"region","rect":{"x":100,"y":120,"width":1280,"height":720}},"format":"gif","durationSeconds":4,"output":"/tmp/demo.gif","gifMaximumSize":960,"gifFrameRate":10}' | /Applications/Clipture.app/Contents/MacOS/Clipture agent record --request -
+```
+
+Region coordinates use pixels from the selected display's top-left corner.
+Outputs must be absolute `.mp4` or `.gif` paths and are never overwritten.
+Read `agent schema record` for authoritative fields and limits.
+
+区域坐标从所选显示器左上角起算，单位为像素。输出必须是绝对 `.mp4` 或 `.gif`
+路径，且不会覆盖已有文件。正式字段和边界以 `agent schema record` 为准。
 
 ## Current clipboard / 当前剪贴板
 
