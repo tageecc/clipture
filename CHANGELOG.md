@@ -2,6 +2,14 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.9 — 2026-09-04
+
+- Improved text annotation dismissal: the first click outside the editor now saves entered text or cancels an empty draft without creating another text box at that location. Click again to add a new text annotation.
+
+### 中文
+
+- 改进文字标注的取消交互：编辑时首次点击其他位置会保存已输入内容，空草稿则直接取消，并且不会在该点击位置再次创建输入框；再次点击才会新建文字标注。
+
 ## 1.2.8 — 2026-09-04
 
 - Fixed recorded GIFs pasting as static images in some apps. The clipboard now provides both the original animated GIF and a temporary GIF file reference, which is automatically removed after the clipboard changes.
