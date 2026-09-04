@@ -2,6 +2,14 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.8 — 2026-09-04
+
+- Fixed recorded GIFs pasting as static images in some apps. The clipboard now provides both the original animated GIF and a temporary GIF file reference, which is automatically removed after the clipboard changes.
+
+### 中文
+
+- 修复录制 GIF 复制后在部分应用中只能粘贴为静态图片的问题。剪贴板现在同时提供原始动态 GIF 和临时 GIF 文件引用，并在剪贴板内容变化后自动清理临时文件。
+
 ## 1.2.7 — 2026-09-04
 
 - Rebuilt the post-recording HUD with native Liquid Glass on macOS 26, shared button components from Settings, improved action spacing, and consistent light and dark appearances.
