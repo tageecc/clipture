@@ -2,6 +2,14 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.10 — 2026-09-04
+
+- Fixed click-through when finishing a numbered annotation: while its input is active, the first click elsewhere now only saves entered text or cancels an empty draft and does not immediately create another marker at that location. Click again to add one.
+
+### 中文
+
+- 修复数字标注编辑结束时的点击穿透：输入框激活期间首次点击其他位置只会保存已输入内容或取消空草稿，不会在点击位置立即创建新的数字标注；再次点击才会新建。
+
 ## 1.2.9 — 2026-09-04
 
 - Improved text annotation dismissal: the first click outside the editor now saves entered text or cancels an empty draft without creating another text box at that location. Click again to add a new text annotation.
