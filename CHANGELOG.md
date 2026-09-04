@@ -2,6 +2,16 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.7 — 2026-09-04
+
+- Rebuilt the post-recording HUD with native Liquid Glass on macOS 26, shared button components from Settings, improved action spacing, and consistent light and dark appearances.
+- Fixed the HUD becoming empty after copying a GIF. The confirmation keeps the original size, clearly shows the result, and verifies clipboard data before the temporary file is cleaned up.
+
+### 中文
+
+- 重做录屏完成悬浮窗：在 macOS 26 使用系统原生液态玻璃，并与设置页复用同一套按钮组件，改善操作间距与浅色、深色外观的一致性。
+- 修复复制 GIF 后悬浮窗内容消失的问题；复制完成态保持原有尺寸并明确显示结果，同时校验剪贴板数据后再清理临时文件。
+
 ## 1.2.6 — 2026-09-03
 
 - Refined the post-recording HUD with clearer status and action groups, improved button icons and spacing, and a stable layout after copy or save succeeds.
