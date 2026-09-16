@@ -2,6 +2,20 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.11 — 2026-09-16
+
+- Clipboard history now keeps its own copy of single image files, so they remain available to copy, paste, and save after the source cache is cleared or the original file is moved. Original image files and GIFs are preserved intact.
+- Copying an image history item now provides both image data and a file representation for image editors, rich text editors, and Finder.
+- Added a Save As… button and the ⌘S shortcut to save images, text, or individual files to a chosen location.
+- Older image entries with missing source files can recover pasting and saving from their cached previews. Recovered image quality is limited to the available preview.
+
+### 中文
+
+- 剪贴板历史现在独立保存单张图片文件，来源缓存被清理或原文件被移走后，仍能复制、粘贴和保存；原始图片文件和 GIF 会完整保留。
+- 复制图片历史时同时提供图片数据和文件格式，方便粘贴到图片编辑器、富文本编辑器或访达。
+- 新增“另存为…”按钮和 ⌘S 快捷键，可将图片、文本或单个文件保存到指定位置。
+- 旧图片记录的原文件已丢失时，可使用已保存的预览图恢复粘贴和保存；恢复图片的清晰度以现有预览为限。
+
 ## 1.2.10 — 2026-09-04
 
 - Fixed click-through when finishing a numbered annotation: while its input is active, the first click elsewhere now only saves entered text or cancels an empty draft and does not immediately create another marker at that location. Click again to add one.
