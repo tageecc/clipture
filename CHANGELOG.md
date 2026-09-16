@@ -2,6 +2,18 @@
 
 Release binaries and complete notes are available on the [Releases page](https://github.com/tageecc/clipture/releases).
 
+## 1.2.12 — 2026-09-16
+
+- Added Copy to completed MP4 recordings. Paste into apps that accept video or file attachments without choosing a save location; copying after trimming uses the trimmed video.
+- Improved recording clipboard file retention and cleanup so closing the completion panel or copying something else does not immediately interrupt video and GIF paste or upload operations.
+- Clipboard history now preserves original video files within configured storage limits, allowing preview, copy, and Save As after the source cache disappears.
+
+### 中文
+
+- MP4 录屏结束后新增“复制”按钮，无需选择保存位置即可在支持视频或文件粘贴的应用中使用；裁剪后复制保留裁剪结果。
+- 改进录屏复制文件的保留与清理，关闭完成提示或复制其他内容不会立即使正在粘贴、上传的视频和 GIF 失效。
+- 剪贴板历史现在会在容量限制内保存视频原文件，源缓存消失后仍可预览、再次复制或另存为。
+
 ## 1.2.11 — 2026-09-16
 
 - Clipboard history now keeps its own copy of single image files, so they remain available to copy, paste, and save after the source cache is cleared or the original file is moved. Original image files and GIFs are preserved intact.
